@@ -45,7 +45,8 @@ function WebpackChunkRenamerPlugin(options) {
 	                const outputOptions = data.outputOptions;
 
 	                if( options.initialChunksWithEntry &&
-		                chunk.hasEntryModule() &&
+                        (compilation.chunkGraph.getNumberOfEntryModules(chunk) > 0) &&
+		                // chunk.hasEntryModule() &&
 		                chunk.isOnlyInitial()) {
 
 		                chunk.filenameTemplate = outputOptions.filename;
