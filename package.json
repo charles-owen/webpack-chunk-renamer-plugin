@@ -1,6 +1,6 @@
 {
   "name": "webpack-chunk-renamer-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds the template option [lc-name] and allows for chunk renaming",
   "main": "./WebpackChunkRenamerPlugin.js",
   "scripts": {},
