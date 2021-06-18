@@ -2,6 +2,8 @@
 
 _Adds the template option [lc-name] that will substitute a lower-case name. Also adds automatic renaming of chunks._
 
+Version 1.0.0 requires Webpack 5.
+
 I prefer to have my exported JavaScript objects start with an upper-case letter, but I like
 the actual JavaScript files to be all lower case names. For example, suppose you have 
 these entry points:

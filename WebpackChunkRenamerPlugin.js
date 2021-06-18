@@ -18,7 +18,7 @@ function WebpackChunkRenamerPlugin(options) {
 
         compiler.hooks.compilation.tap("WebpackChunkRenamerPlugin", compilation => {
 
-	        compilation.mainTemplate.hooks.assetPath.tap(
+            compilation.hooks.assetPath.tap(
                 "WebpackChunkRenamerPlugin",
                 (path, data) => {
                     const chunk = data.chunk;
@@ -38,7 +38,7 @@ function WebpackChunkRenamerPlugin(options) {
                 }
             );
 
-	        compilation.chunkTemplate.hooks.renderManifest.tap(
+	        compilation.hooks.renderManifest.tap(
 	            "WebpackChunkRenamerPlugin",
                 (path, data) => {
 	                const chunk = data.chunk;
